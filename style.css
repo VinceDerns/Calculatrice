@@ -1,0 +1,143 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(85, 164, 221);
+    color: white;
+    width: 100%;
+    white-space: nowrap;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+}
+
+main
+{
+    margin: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.calculatrice{
+    width: 100%;
+    background-color: rgb(85, 164, 221);
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    border: 2px solid grey;
+}
+
+.screen
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-size: 2em;   
+    height: 2.5rem; 
+    font-family: 'Orbitron', sans-serif;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3.1rem;
+}
+
+.numpad{
+    display: flex;
+    justify-content: center;
+
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;          
+}
+
+.button
+{
+    background-color: white;    
+    font-size: 2rem;
+    padding: 1rem auto;
+    border: 1px solid rgb(85, 164, 221);
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;  
+    border: 2px solid grey;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+.button:hover, #button_equal:hover
+{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.line__numpad
+{
+    display: flex;            
+}
+
+.line__numpad:last-child > .button
+{
+    margin-bottom: 0;
+}
+
+.line__operation
+{
+    display: flex;
+    flex-direction: column;       
+}
+
+.line__operation:last-child > .button:last-child{
+    margin-bottom: 0;
+}
+
+.operator{
+    margin-right: 0;   
+}
+
+.touch__egal
+{
+    display: flex;
+    justify-content: center;     
+}
+
+#button_equal
+{
+    background-color: white;    
+    font-size: 2rem;
+    padding: 1rem auto;
+    border: 1px solid rgb(85, 164, 221);
+    border-radius: 2px;    
+    height: 50px;  
+    border: 2px solid grey;
+    margin-top: 15px;   
+}
+
+.numpad
+{
+width: min-content;
+margin: 0  auto ;
+}
